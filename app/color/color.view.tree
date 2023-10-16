@@ -1,0 +1,14 @@
+$brand_app_color $mol_page
+	title \Цвета
+	body /
+		<= Source $mol_text text \Исходный цвет: #222
+		<= Target $mol_string
+			hint \Нужный цвет: #fafafa
+		<= Formula $mol_text text \
+			\# Формула:
+			\--mol_theme_back: hsl( var(--mol_theme_hue), calc( var(--mol_theme_satur) * 20% ), calc( 55% + 45% * var(--mol_theme_luma) ) );
+		<= Result $mol_text text \
+			\# Итоговый css
+			\:root {
+			\	--mol_theme_back: hsl( var(--mol_theme_hue), calc( var(--mol_theme_satur) * 46% ), calc(12% + 31% * var(--mol_theme_luma) ) );
+			\}
