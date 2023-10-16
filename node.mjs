@@ -9190,7 +9190,7 @@ var $;
 (function ($) {
     class $brand_app_color extends $mol_page {
         title() {
-            return "Цвета";
+            return "Темы";
         }
         tools() {
             return [
