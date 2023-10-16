@@ -1,5 +1,5 @@
 $brand_app_color $mol_page
-	title \Цвета
+	title \Темы
 	tools /
 		<= GitHub $mol_link_source uri \https://github.com/Lyumih/brand
 	body /
