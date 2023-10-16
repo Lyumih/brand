@@ -1,0 +1,56 @@
+$brand_app_example $mol_page
+	title \Примеры
+	tools / <= Lighter $mol_lights_toggle
+	body /
+		<= Buttons $brand_app_example_section
+			title \# Кнопки
+			content /
+				<= Button_major $mol_button_major title \$mol_button_major
+				<= Button_major_disabled $mol_button_major
+					title \$mol_button_major disabled
+					enabled false
+				<= Button_minor $mol_button_minor
+				<= Button_minor_disabled $mol_button_minor
+					title \$mol_button_minor disabled
+					enabled false
+		<= Inputs $brand_app_example_section
+			title \# Инпуты
+			content /
+				<= Number $mol_number hint \$mol_number
+				<= String $mol_string hint \$mol_string
+				<= String_content $mol_string
+					value? <=> string_content? \$mol_string значения
+		<= Checkboxes $brand_app_example_section
+			title \# Чекбокс
+			content /
+				<= Checkbox $mol_check_box title \Простой чекбокс
+				<= Checkbox_checked $mol_check_box
+					title \Простой чекбокс - checked
+					checked true
+				<= Checkbox_disabled $mol_check_box
+					title \Простой чекбокс - disabled
+					enabled false
+				<= Switcher $mol_switch
+					value? <=> color? \red
+					options <= colors *
+						red \Red
+						green \Green
+						blue \Blue
+		<= Links $brand_app_example_section
+			title \Ссылки
+			content /
+				<= Link $mol_link
+				<= Link_uri $mol_link
+					title \Ссылка с uri
+					uri \https://github.com/Lyumih/brand
+				<= Link_iconed $mol_link_iconed
+					uri \https://github.com/Lyumih/brand
+		<= Icons $brand_app_example_section
+			title \# Иконки
+			content /
+				<= Icon_github $mol_icon_github_circle
+
+$brand_app_example_section $mol_list
+	rows /
+		<= Section $mol_text text <= title \
+		<= Content $mol_list rows <= content /

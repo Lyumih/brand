@@ -1,5 +1,7 @@
-$brand_app $mol_book2_catalog
-	menu_title \Бренд $mol
-	param \page
-	spreads *
-		color <= Color_page $brand_app_color
+$brand_app $mol_book2
+	title \Бренд $mol
+	plugins /
+		<= Theme $mol_theme_auto
+	pages /
+		<= Color $brand_app_color
+		<= Example $brand_app_example

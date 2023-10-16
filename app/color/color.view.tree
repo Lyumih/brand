@@ -1,6 +1,22 @@
 $brand_app_color $mol_page
 	title \Цвета
+	tools /
+		<= GitHub $mol_link_source uri \https://github.com/Lyumih/brand
 	body /
+		<= Themes_switcher $mol_switch
+			value? <=> color? \mol
+			options <= colors *
+				mol \$mol
+				custom \Custom
+				bootstrap \Bootstrap
+				mui \Mui
+				vuetify \Vuetify
+				ant \Ant
+		<= Theme_link $mol_link_iconed
+			title \Исходник тем $mol
+			uri \https://github.com/hyoo-ru/mam_mol/tree/master/theme
+		<= Themes $mol_text text \Темы $mol: *mol_theme_light, mol_theme_dark, mol_theme_current, mol_theme_special, mol_theme_accent*
+		<= Keys $mol_text text \Ключи темы: *back, hover, card, current, special, text, control, shade, line, focus, field, image*
 		<= Source $mol_text text \Исходный цвет: #222
 		<= Target $mol_string
 			hint \Нужный цвет: #fafafa
