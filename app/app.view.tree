@@ -1,0 +1,13 @@
+$brand_app $mol_book2_catalog
+	menu_title \Бренд $mol
+	param \page
+	spreads *
+		color <= Color_page $mol_page
+			title \Цвета
+			body /
+				<= Source $mol_string
+					hint \Исходный цвет
+				<= Target $mol_string
+					hint \Нужный цвет
+				<= Result $mol_string
+					hint \Итоговый css
