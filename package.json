@@ -141,6 +141,7 @@
     "$mol_page",
     "$mol_link_source",
     "$mol_link",
+    "$mol_icon_script_text",
     "$mol_icon_script",
     "$mol_icon",
     "$mol_svg_root",
