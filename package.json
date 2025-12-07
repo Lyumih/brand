@@ -232,7 +232,6 @@
     "$mol_icon_github"
   ],
   "dependencies": {
-    "internal": "*",
     "jsdom": "*"
   }
 }
