@@ -1,0 +1,10 @@
+{
+	"name": "brand_app",
+	"short_name": "brand_app",
+	"description": "",
+	"id": "brand_app",
+	"start_url": ".",
+	"display": "standalone",
+	"background_color": "#000000",
+	"theme_color": "#000000"
+}
