@@ -222,6 +222,7 @@
     "$mol_expander",
     "$mol_string",
     "$mol_hotkey",
+    "$mol_hotkey2",
     "$brand_app_example",
     "$mol_lights_toggle",
     "$mol_check_icon",
