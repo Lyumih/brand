@@ -176,6 +176,7 @@
     "$mol_keyboard",
     "$mol_button_typed",
     "$mol_dom_event",
+    "$mol_dom_transfer",
     "$mol_state_session",
     "$mol_link_iconed",
     "$mol_image",
